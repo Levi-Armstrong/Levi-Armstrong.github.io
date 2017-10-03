@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Main Objective &mdash; SphinxTest 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SphinxTest 1.0 documentation" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SphinxTest
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">SphinxTest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>1. Main Objective</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/doc/kinetic/Descartes-Planning-and-Execution-General-Instructions.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <blockquote>
+<div>In this exercise, we'll demonstrate how to run the demo as you make progress through the exercises.  Also, it will be shown how to run the system in simulation mode and on the real robot.</div></blockquote>
+<div class="section" id="main-objective">
+<span id="main-objective"></span><h1>1. Main Objective<a class="headerlink" href="#main-objective" title="Permalink to this headline">¶</a></h1>
+<p>In general, you'll be implementing a <code class="docutils literal"><span class="pre">plan_and_run</span></code> node incrementally.  This means that in each exercise you'll be adding individual pieces that are needed to complete the full application demo. Thus, when an exercise is completed run the demo in simulation mode in order to verify your results.  Only when all of the exercises are finished should you run it on the real robot.</p>
+</div>
+<div class="section" id="complete-exercises">
+<span id="complete-exercises"></span><h1>2. Complete Exercises<a class="headerlink" href="#complete-exercises" title="Permalink to this headline">¶</a></h1>
+<ol class="simple">
+<li>To complete an exercise, open the corresponding source file under the <code class="docutils literal"><span class="pre">src/plan_and_run/src/tasks/</span></code> directory.  For instance, in Exercise 1 you'll open <code class="docutils literal"><span class="pre">load_parameters.cpp</span></code>.</li>
+<li>Take a minute to read the header comments for specific instructions for how to complete this particular exercise.  For instance, the <code class="docutils literal"><span class="pre">load_parameters.cpp</span></code>  file contains the following instructions and hints:</li>
+</ol>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="cm">/* LOAD PARAMETERS</span>
+<span class="cm">  Goal:</span>
+<span class="cm">    - Load missing application parameters into the node from the ros parameter server.</span>
+<span class="cm">    - Use a private NodeHandle in order to load parameters defined in the node&#39;s namespace.</span>
+<span class="cm">  Hints:</span>
+<span class="cm">    - Look at how the &#39;config_&#39; structure is used to save the parameters.</span>
+<span class="cm">    - A private NodeHandle can be created by passing the &quot;~&quot; string to its constructor.</span>
+<span class="cm">*/</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>Don't forget to comment out the line:</li>
+</ol>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">ROS_ERROR_STREAM</span><span class="p">(</span><span class="s">&quot;Task &#39;&quot;</span><span class="o">&lt;&lt;</span><span class="n">__FUNCTION__</span> <span class="o">&lt;&lt;</span><span class="s">&quot;&#39; is incomplete. Exiting&quot;</span><span class="p">);</span> <span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>This line is usually located at the beginning of each function.  Omitting this step will cause the program to exit immediately when it reaches this point.</p>
+<ol class="simple">
+<li>When you run into a comment block that starts with <code class="docutils literal"><span class="pre">/*</span> <span class="pre">Fill</span> <span class="pre">Code:</span></code> this means that the line(s) of code that follow are incorrect, commented out or incomplete at best.  Read the instructions following <code class="docutils literal"><span class="pre">Fill</span> <span class="pre">Code</span></code> and complete that task as described.  An example of instructions comment block is the following:</li>
+</ol>
+<div class="highlight-c++"><div class="highlight"><pre><span></span>  <span class="cm">/*  Fill Code:</span>
+<span class="cm">   * Goal:</span>
+<span class="cm">   * - Create a private handle by passing the &quot;~&quot; string to its constructor</span>
+<span class="cm">   * Hint:</span>
+<span class="cm">   * - Replace the string in ph below with &quot;~&quot; to make it a private node.</span>
+<span class="cm">   */</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>The <code class="docutils literal"><span class="pre">[</span> <span class="pre">COMPLETE</span> <span class="pre">HERE</span> <span class="pre">]</span></code> entries are meant to be replaced by the appropriate <code class="docutils literal"><span class="pre">code</span> <span class="pre">entry</span></code>.  The right code entries could either be program variables, strings or numeric constants.  One example is shown below:</li>
+</ol>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span> <span class="n">ph</span><span class="p">(</span><span class="s">&quot;[ COMPLETE HERE ]: ?? &quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>In this case the correct replacement would be the string <code class="docutils literal"><span class="pre">&quot;~&quot;</span></code>, so this line would look like this:</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span> <span class="n">ph</span><span class="p">(</span><span class="s">&quot;~&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>As you are completing each task in this exercise, you can run the demo (see following sections) to verify that it was completed properly.</li>
+</ol>
+</div>
+<div class="section" id="run-demo-in-simulation-mode">
+<span id="run-demo-in-simulation-mode"></span><h1>3. Run Demo in Simulation Mode<a class="headerlink" href="#run-demo-in-simulation-mode" title="Permalink to this headline">¶</a></h1>
+<ol class="simple">
+<li>In a terminal, run the setup launch file as follows:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">plan_and_run</span> <span class="n">demo_setup</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>When the virtual robot is ready , Rviz should be up and running with a UR5 arm in the home position and you'll see the following messages in the terminal:</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span>      .
+      .
+      .
+********************************************************
+* MoveGroup using: 
+*     - CartesianPathService
+*     - ExecutePathService
+*     - KinematicsService
+*     - MoveAction
+*     - PickPlaceAction
+*     - MotionPlanService
+*     - QueryPlannersService
+*     - StateValidationService
+*     - GetPlanningSceneService
+*     - ExecutePathService
+********************************************************
+
+[ INFO] [1430359645.694537917]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[ INFO] [1430359645.694700640]: MoveGroup context initialization complete
+
+All is well! Everyone is happy! You can start planning now!
+</pre></div>
+</div>
+<ul class="simple">
+<li>This launch file only needs to be run once.</li>
+</ul>
+<ol class="simple">
+<li>In a separate terminal, run the application launch file:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">plan_and_run</span> <span class="n">demo_run</span><span class="o">.</span><span class="n">launch</span> 
+</pre></div>
+</div>
+<ul class="simple">
+<li>Look in the Rviz window and the arm should start moving.</li>
+</ul>
+</div>
+<div class="section" id="run-demo-on-the-real-robot">
+<span id="run-demo-on-the-real-robot"></span><h1>4. Run Demo on the Real Robot<a class="headerlink" href="#run-demo-on-the-real-robot" title="Permalink to this headline">¶</a></h1>
+<p><strong>Notes</strong></p>
+<ul class="simple">
+<li>Make sure that you can <code class="docutils literal"><span class="pre">ping</span></code> the robot and that there aren't any obstacles near it.</li>
+</ul>
+<ol class="simple">
+<li>In a terminal, run the setup launch file as follows:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">plan_and_run</span> <span class="n">demo_setup</span><span class="o">.</span><span class="n">launch</span> <span class="n">sim</span><span class="p">:</span><span class="o">=</span><span class="n">false</span> <span class="n">robot_ip</span><span class="p">:</span><span class="o">=</span><span class="mf">000.000</span><span class="o">.</span><span class="mf">0.00</span> 
+</pre></div>
+</div>
+<p><strong>Notes:</strong></p>
+<ul class="simple">
+<li>Enter the robot's actual IP address into the <code class="docutils literal"><span class="pre">robot_ip</span></code> argument.  The robot model in Rviz should be in about the same position as the real robot.</li>
+</ul>
+<ol class="simple">
+<li>In a separate terminal, run the application launch file:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">plan_and_run</span> <span class="n">demo_run</span><span class="o">.</span><span class="n">launch</span> 
+</pre></div>
+</div>
+<ul class="simple">
+<li>This time the real robot should start moving.</li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Levi Armstrong.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Click the appropriate link below for the desired version of ROS:
+* [Groovy](http://aeswiki.datasys.swri.edu/rositraining/Exercises/)
+* [Hydro](http://aeswiki.datasys.swri.edu/rositraining/hydro/Exercises/)
+* [Indigo](http://aeswiki.datasys.swri.edu/rositraining/indigo/Exercises/)
+* [Kinetic](https://github.com/ros-industrial/industrial_training/wiki/ROS-Industrial-(Kinetic)-Training-Excercises) (Latest)

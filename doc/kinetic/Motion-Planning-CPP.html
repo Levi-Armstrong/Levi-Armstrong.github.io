@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Motivation &mdash; SphinxTest 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SphinxTest 1.0 documentation" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SphinxTest
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">SphinxTest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>1. Motivation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/doc/kinetic/Motion-Planning-CPP.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <blockquote>
+<div>In this exercise, we'll explore MoveIt's C++ interface to programatically move a robot.</div></blockquote>
+<hr class="docutils" />
+<div class="section" id="motivation">
+<span id="motivation"></span><h1>1. Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h1>
+<p>Now that we’ve got a working MoveIt! configuration for your workcell and we’ve played a bit in RViz with the planning tools, let’s perform planning and motion in code. This exercise will introduce you to the basic C++ interface for interacting with the MoveIt! node in your own program. There are lots of ways to use MoveIt!, but for simple applications this is the most straight forward.</p>
+</div>
+<div class="section" id="reference-example">
+<span id="reference-example"></span><h1>2. Reference Example<a class="headerlink" href="#reference-example" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/pr2_tutorials/planning/src/doc/move_group_interface_tutorial.html#setup">Move Group Interface tutorial</a></p>
+</div>
+<div class="section" id="further-information-and-resources">
+<span id="further-information-and-resources"></span><h1>3. Further Information and Resources<a class="headerlink" href="#further-information-and-resources" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference external" href="http://docs.ros.org/kinetic/api/moveit_tutorials/html/">MoveIt! Tutorials</a></li>
+<li><a class="reference external" href="http://moveit.ros.org/">MoveIt! home-page</a></li>
+</ul>
+</div>
+<div class="section" id="scan-n-plan-application-problem-statement">
+<span id="scan-n-plan-application-problem-statement"></span><h1>4. Scan-N-Plan Application: Problem Statement<a class="headerlink" href="#scan-n-plan-application-problem-statement" title="Permalink to this headline">¶</a></h1>
+<p>In this exercise, your goal is to modify the <code class="docutils literal"><span class="pre">myworkcell_core</span></code> node to:</p>
+<ol class="simple">
+<li>Move the robot’s tool frame to the center of the part location as reported by the service call to your vision node.</li>
+</ol>
+</div>
+<div class="section" id="scan-n-plan-application-guidance">
+<span id="scan-n-plan-application-guidance"></span><h1>5. Scan-N-Plan Application: Guidance<a class="headerlink" href="#scan-n-plan-application-guidance" title="Permalink to this headline">¶</a></h1>
+<ol class="simple">
+<li>Edit your <code class="docutils literal"><span class="pre">myworkcell_node.cpp</span></code> file.<ol>
+<li>Add <code class="docutils literal"><span class="pre">#include</span> <span class="pre">&lt;tf/tf.h&gt;</span></code> to allow access to the tf library (for frame transforms/utilities).<ul>
+<li>Remember that we already added a dependency on the <code class="docutils literal"><span class="pre">tf</span></code> package in a previous exercise.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span>1. In the `ScanNPlan` class&#39;s `start` method below the `if (!vision_client_.call(srv))` statement , use the response from the `LocalizePart` service to create a new `move_target` variable:
+   ```c++
+   geometry_msgs::Pose move_target = srv.response.pose;
+   ```
+</pre></div>
+</div>
+<ol>
+<li><p class="first">Use the <code class="docutils literal"><span class="pre">MoveGroupInterface</span></code> to plan/execute a move to the <code class="docutils literal"><span class="pre">move_target</span></code> position:</p>
+<ol>
+<li><p class="first">The <code class="docutils literal"><span class="pre">MoveGroupInterface</span></code> is part of the <code class="docutils literal"><span class="pre">moveit_ros_planning_interface</span></code> package, so you’ll need to add this as a dependency to your <code class="docutils literal"><span class="pre">myworkcell_core</span></code> package. Modify your package's <code class="docutils literal"><span class="pre">CMakeLists.txt</span></code> (2 lines) and <code class="docutils literal"><span class="pre">package.xml</span></code> (2 lines) as in previous exercises.</p>
+</li>
+<li><p class="first">Add the appropriate &quot;include&quot; reference to allow use of the <code class="docutils literal"><span class="pre">MoveGroupInterface</span></code>:</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;moveit/move_group_interface/move_group_interface.h&gt;</span><span class="cp"></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Create a <code class="docutils literal"><span class="pre">moveit::planning_interface::MoveGroupInterface</span></code> object in the <code class="docutils literal"><span class="pre">ScanNPlan</span></code> class's <code class="docutils literal"><span class="pre">start()</span></code> method. It has a single constructor that takes the name of the planning group you defined when creating the workcell moveit package (“manipulator”).</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveGroupInterface</span> <span class="n">move_group</span><span class="p">(</span><span class="s">&quot;manipulator&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Set the desired cartesian target position using the <code class="docutils literal"><span class="pre">move_group</span></code> object’s <code class="docutils literal"><span class="pre">setPoseTarget</span></code> function. Call the object's <code class="docutils literal"><span class="pre">move()</span></code> function to plan and execute a move to the target position.</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="c1">// Plan for robot to move to part     </span>
+<span class="n">move_group</span><span class="p">.</span><span class="n">setPoseTarget</span><span class="p">(</span><span class="n">move_target</span><span class="p">);</span> 
+<span class="n">move_group</span><span class="p">.</span><span class="n">move</span><span class="p">();</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">As described <a class="reference external" href="http://docs.ros.org/jade/api/moveit_ros_planning_interface/html/classmoveit_1_1planning__interface_1_1MoveGroup.html#a4c63625e2e9eb5c342d1fc6732bd8cf7">here</a>, the <code class="docutils literal"><span class="pre">move_group.move()</span></code> command requires use of an &quot;asynchronous&quot; spinner, to allow processing of ROS messages during the blocking <code class="docutils literal"><span class="pre">move()</span></code> command.  Initialize the spinner near the start of the <code class="docutils literal"><span class="pre">main()</span></code> routine after <code class="docutils literal"><span class="pre">ros::init(argc,</span> <span class="pre">argv,</span> <span class="pre">&quot;myworkcell_node&quot;)</span></code>, and <strong>replace</strong> the existing <code class="docutils literal"><span class="pre">ros::spin()</span></code> command with <code class="docutils literal"><span class="pre">ros::waitForShutdown()</span></code>, as shown:</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">ros</span><span class="o">::</span><span class="n">AsyncSpinner</span> <span class="n">async_spinner</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">async_spinner</span><span class="p">.</span><span class="n">start</span><span class="p">();</span>
+<span class="p">...</span>
+<span class="n">ros</span><span class="o">::</span><span class="n">waitForShutdown</span><span class="p">();</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Test the system!</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>catkin build
+roslaunch myworkcell_moveit_config myworkcell_planning_execution.launch
+roslaunch myworkcell_support workcell.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">More to explore...</p>
+<ul class="simple">
+<li>In RViz, add a &quot;Marker&quot; display of topic &quot;/ar_pose_visual&quot; to confirm that the final robot position matches the position published by <code class="docutils literal"><span class="pre">fake_ar_publisher</span></code></li>
+<li>Try repeating the motion planning sequence:<ol>
+<li>Use the MoveIt rviz interface to move the arm back to the &quot;allZeros&quot; position</li>
+<li>Ctrl+C the <code class="docutils literal"><span class="pre">workcell.launch</span></code> file, then rerun</li>
+</ol>
+</li>
+<li>Try updating the <code class="docutils literal"><span class="pre">workcell_node</span></code>'s <code class="docutils literal"><span class="pre">start</span></code> method to automatically move back to the <code class="docutils literal"><span class="pre">allZeros</span></code> position after moving to the AR_target position.  See <a class="reference external" href="http://docs.ros.org/kinetic/api/moveit_ros_planning_interface/html/classmoveit_1_1planning__interface_1_1MoveGroup.html">here</a> for a list of <code class="docutils literal"><span class="pre">move_group</span></code>'s available methods.</li>
+<li>Try moving to an &quot;approach position&quot; located a few inches away from the target position, prior to the final move-to-target.
+<center></li>
+</ul>
+</li>
+</ol>
+<p>| [[&lt; Prev|Motion-Planning-RVIZ]] | [[Next &gt;|Descartes-Path-Planning]] |
+|:---  | ---:|</p>
+<p></center></p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Levi Armstrong.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

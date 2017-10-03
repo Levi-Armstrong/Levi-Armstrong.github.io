@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>List all the packages in the application &mdash; SphinxTest 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SphinxTest 1.0 documentation" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SphinxTest
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">SphinxTest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>List all the packages in the application</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/doc/kinetic/Descartes-Planning-and-Execution---Structure.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <blockquote>
+<div>In this exercise, we'll take a look at all the packages and files that will be used during the completion of these exercises.</div></blockquote>
+<div class="section" id="list-all-the-packages-in-the-application">
+<span id="list-all-the-packages-in-the-application"></span><h1>List all the packages in the application<a class="headerlink" href="#list-all-the-packages-in-the-application" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">src</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">la</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>''plan_and_run'' :           Contains the source code for the ''plan_and_run'' application.  You'll be completing the exercises by editing source files in this package</li>
+<li>''ur5_demo_moveit_config'' : Contains support files for planning and execution robot motions with Moveit.  This package was generated with the Moveit Setup Assistant</li>
+<li>''ur5_demo_support'' :       Provides the robot definition as a URDF file.  This URDF is loaded at run time by our ''plan_and_run'' application.</li>
+<li>''ur5_demo_descartes'' :     Provides a custom Descartes Robot Model for the UR5 arm.  It uses a Inverse-Kinematics closed form solution; which is significantly faster than the numerical approach used by the !MoveitStateAdapter.</li>
+</ul>
+</div>
+<div class="section" id="the-plan-and-run-package">
+<span id="the-plan-and-run-package"></span><h1>The ''plan_and_run'' package<a class="headerlink" href="#the-plan-and-run-package" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">roscd</span> <span class="n">plan_and_run</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">la</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>''src'' :     Application source files.</li>
+<li>''src/demo_application.cpp'' : It is a class source file that contains the application implementation code.</li>
+<li>''src/plan_and_run.cpp''     : It is the application main access point. It invokes all the task in the application and wraps them inside the &quot;''main''&quot; routine.</li>
+<li>''src/tasks''                : A directory that contains all of the source files that you'll be editing or completing as you make progress through the exercises.</li>
+<li>''include'' : Header files</li>
+<li>''include/plan_and_run/demo_application.h'' : It defines the application skeleton and provides a number of global variables for passing data at various points in the exercises.</li>
+<li>''launch'': Launch files needed to run the application</li>
+<li>''launch/demo_setup.launch'' : Loads roscore, moveit and the runtime resources needed by our application.</li>
+<li>''launch/demo_run.launch'' : Starts our application main executable as a ros node.</li>
+<li>''config'': Directory that contains non-critical configuration files.</li>
+</ul>
+</div>
+<div class="section" id="the-main-application-source-file">
+<span id="the-main-application-source-file"></span><h1>The Main Application Source File<a class="headerlink" href="#the-main-application-source-file" title="Permalink to this headline">¶</a></h1>
+<p>In the &quot;'''plan_and_run/src/plan_and_run_node.cpp'''&quot; you'll find the following code:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">main</span><span class="p">(</span><span class="nb">int</span> <span class="n">argc</span><span class="p">,</span><span class="n">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">ros</span><span class="p">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="n">argv</span><span class="p">,</span><span class="s2">&quot;plan_and_run&quot;</span><span class="p">);</span>
+  <span class="n">ros</span><span class="p">::</span><span class="n">AsyncSpinner</span> <span class="n">spinner</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+  <span class="n">spinner</span><span class="o">.</span><span class="n">start</span><span class="p">();</span>
+
+  <span class="o">//</span> <span class="n">creating</span> <span class="n">application</span>
+  <span class="n">plan_and_run</span><span class="p">::</span><span class="n">DemoApplication</span> <span class="n">application</span><span class="p">;</span>
+
+  <span class="o">//</span> <span class="n">loading</span> <span class="n">parameters</span>
+  <span class="n">application</span><span class="o">.</span><span class="n">loadParameters</span><span class="p">();</span>
+
+  <span class="o">//</span> <span class="n">initializing</span> <span class="n">ros</span> <span class="n">components</span>
+  <span class="n">application</span><span class="o">.</span><span class="n">initRos</span><span class="p">();</span>
+
+  <span class="o">//</span> <span class="n">initializing</span> <span class="n">descartes</span>
+  <span class="n">application</span><span class="o">.</span><span class="n">initDescartes</span><span class="p">();</span>
+
+  <span class="o">//</span> <span class="n">moving</span> <span class="n">to</span> <span class="n">home</span> <span class="n">position</span>
+  <span class="n">application</span><span class="o">.</span><span class="n">moveHome</span><span class="p">();</span>
+
+  <span class="o">//</span> <span class="n">generating</span> <span class="n">trajectory</span>
+  <span class="n">plan_and_run</span><span class="p">::</span><span class="n">DescartesTrajectory</span> <span class="n">traj</span><span class="p">;</span>
+  <span class="n">application</span><span class="o">.</span><span class="n">generateTrajectory</span><span class="p">(</span><span class="n">traj</span><span class="p">);</span>
+
+
+  <span class="o">//</span> <span class="n">planning</span> <span class="n">robot</span> <span class="n">path</span>
+  <span class="n">plan_and_run</span><span class="p">::</span><span class="n">DescartesTrajectory</span> <span class="n">output_path</span><span class="p">;</span>
+  <span class="n">application</span><span class="o">.</span><span class="n">planPath</span><span class="p">(</span><span class="n">traj</span><span class="p">,</span><span class="n">output_path</span><span class="p">);</span>
+
+  <span class="o">//</span> <span class="n">running</span> <span class="n">robot</span> <span class="n">path</span>
+  <span class="n">application</span><span class="o">.</span><span class="n">runPath</span><span class="p">(</span><span class="n">output_path</span><span class="p">);</span>
+
+  <span class="o">//</span> <span class="n">exiting</span> <span class="n">ros</span> <span class="n">node</span>
+  <span class="n">spinner</span><span class="o">.</span><span class="n">stop</span><span class="p">();</span>
+
+
+
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In short, this program will run through each exercise by calling the corresponding function from the '''application''' object.  For instance, in order to initialize Descartes the program calls '''application.iniDescartes()'''.  Thus each exercise consists of editing the source file where that exercise is implemented, so for '''application.initDescartes()''' you'll be editing the ''plan_and_run/src/tasks/init_descartes.src'' source file.</p>
+</div>
+<div class="section" id="the-demoapplication-class">
+<span id="the-demoapplication-class"></span><h1>The DemoApplication class<a class="headerlink" href="#the-demoapplication-class" title="Permalink to this headline">¶</a></h1>
+<p>In the header file &quot;'''plan_and_run/include/plan_and_run/demo_application.h'''&quot; you'll find the definition for the application's main class along with several support constructs. Some of the important components to take notice of are as follows:</p>
+<ul class="simple">
+<li>Program Variables: Contain hardcoded values that are used at various points in the application.</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">ROBOT_DESCRIPTION_PARAM</span> <span class="o">=</span> <span class="s2">&quot;robot_description&quot;</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">EXECUTE_TRAJECTORY_SERVICE</span> <span class="o">=</span> <span class="s2">&quot;execute_kinematic_path&quot;</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">VISUALIZE_TRAJECTORY_TOPIC</span> <span class="o">=</span> <span class="s2">&quot;visualize_trajectory_curve&quot;</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">double</span> <span class="n">SERVICE_TIMEOUT</span> <span class="o">=</span> <span class="mf">5.0</span><span class="n">f</span><span class="p">;</span> <span class="o">//</span> <span class="n">seconds</span>
+<span class="n">const</span> <span class="n">double</span> <span class="n">ORIENTATION_INCREMENT</span> <span class="o">=</span> <span class="mf">0.5</span><span class="n">f</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">double</span> <span class="n">EPSILON</span> <span class="o">=</span> <span class="mf">0.0001</span><span class="n">f</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">double</span> <span class="n">AXIS_LINE_LENGHT</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">double</span> <span class="n">AXIS_LINE_WIDTH</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">PLANNER_ID</span> <span class="o">=</span> <span class="s2">&quot;RRTConnectkConfigDefault&quot;</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">HOME_POSITION_NAME</span> <span class="o">=</span> <span class="s2">&quot;home&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Trajectory Type: Convenience type that represents an array of Descartes Trajectory Points.</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">typedef</span> <span class="n">std</span><span class="p">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">descartes_core</span><span class="p">::</span><span class="n">TrajectoryPtPtr</span><span class="o">&gt;</span> <span class="n">DescartesTrajectory</span><span class="p">;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>!DemoConfiguration Data Structure:  Provides variables whose values are initialize at run-time from corresponding ros parameters.</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">struct</span> <span class="n">DemoConfiguration</span>
+<span class="p">{</span>
+  <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">group_name</span><span class="p">;</span>                 <span class="o">/*</span> <span class="n">Name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">manipulation</span> <span class="n">group</span> <span class="n">containing</span> <span class="n">the</span> <span class="n">relevant</span> <span class="n">links</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">robot</span> <span class="o">*/</span>
+  <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">tip_link</span><span class="p">;</span>                   <span class="o">/*</span> <span class="n">Usually</span> <span class="n">the</span> <span class="n">last</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">kinematic</span> <span class="n">chain</span> <span class="n">of</span> <span class="n">the</span> <span class="n">robot</span> <span class="o">*/</span>
+  <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">base_link</span><span class="p">;</span>                  <span class="o">/*</span> <span class="n">The</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">base</span> <span class="n">link</span> <span class="n">of</span> <span class="n">the</span> <span class="n">robot</span> <span class="o">*/</span>
+  <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">world_frame</span><span class="p">;</span>                <span class="o">/*</span> <span class="n">The</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">world</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">URDF</span> <span class="n">file</span> <span class="o">*/</span>
+  <span class="n">std</span><span class="p">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="p">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">joint_names</span><span class="p">;</span>   <span class="o">/*</span> <span class="n">A</span> <span class="nb">list</span> <span class="k">with</span> <span class="n">the</span> <span class="n">names</span> <span class="n">of</span> <span class="n">the</span> <span class="n">mobile</span> <span class="n">joints</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">robot</span> <span class="o">*/</span>
+
+
+  <span class="o">/*</span> <span class="n">Trajectory</span> <span class="n">Generation</span> <span class="n">Members</span><span class="p">:</span>
+   <span class="o">*</span>  <span class="n">Used</span> <span class="n">to</span> <span class="n">control</span> <span class="n">the</span> <span class="n">attributes</span> <span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">etc</span><span class="p">)</span> <span class="n">of</span> <span class="n">the</span> <span class="n">robot</span> <span class="n">trajectory</span><span class="o">.</span>
+   <span class="o">*</span>  <span class="o">*/</span>
+  <span class="n">double</span> <span class="n">time_delay</span><span class="p">;</span>              <span class="o">/*</span> <span class="n">Time</span> <span class="n">step</span> <span class="n">between</span> <span class="n">consecutive</span> <span class="n">points</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">robot</span> <span class="n">path</span> <span class="o">*/</span>
+  <span class="n">double</span> <span class="n">foci_distance</span><span class="p">;</span>           <span class="o">/*</span> <span class="n">Controls</span> <span class="n">the</span> <span class="n">size</span> <span class="n">of</span> <span class="n">the</span> <span class="n">curve</span> <span class="o">*/</span>
+  <span class="n">double</span> <span class="n">radius</span><span class="p">;</span>                  <span class="o">/*</span> <span class="n">Controls</span> <span class="n">the</span> <span class="n">radius</span> <span class="n">of</span> <span class="n">the</span> <span class="n">sphere</span> <span class="n">on</span> <span class="n">which</span> <span class="n">the</span> <span class="n">curve</span> <span class="ow">is</span> <span class="n">projected</span> <span class="o">*/</span>
+  <span class="nb">int</span> <span class="n">num_points</span><span class="p">;</span>                 <span class="o">/*</span> <span class="n">Number</span> <span class="n">of</span> <span class="n">points</span> <span class="n">per</span> <span class="n">curve</span> <span class="o">*/</span>
+  <span class="nb">int</span> <span class="n">num_lemniscates</span><span class="p">;</span>            <span class="o">/*</span> <span class="n">Number</span> <span class="n">of</span> <span class="n">curves</span><span class="o">*/</span>
+  <span class="n">std</span><span class="p">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">double</span><span class="o">&gt;</span> <span class="n">center</span><span class="p">;</span>     <span class="o">/*</span> <span class="n">Location</span> <span class="n">of</span> <span class="n">the</span> <span class="n">center</span> <span class="n">of</span> <span class="nb">all</span> <span class="n">the</span> <span class="n">lemniscate</span> <span class="n">curves</span> <span class="o">*/</span>
+  <span class="n">std</span><span class="p">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">double</span><span class="o">&gt;</span> <span class="n">seed_pose</span><span class="p">;</span>  <span class="o">/*</span> <span class="n">Joint</span> <span class="n">values</span> <span class="n">close</span> <span class="n">to</span> <span class="n">the</span> <span class="n">desired</span> <span class="n">start</span> <span class="n">of</span> <span class="n">the</span> <span class="n">robot</span> <span class="n">path</span> <span class="o">*/</span>
+
+  <span class="o">/*</span>
+   <span class="o">*</span> <span class="n">Visualization</span> <span class="n">Members</span>
+   <span class="o">*</span> <span class="n">Used</span> <span class="n">to</span> <span class="n">control</span> <span class="n">the</span> <span class="n">attributes</span> <span class="n">of</span> <span class="n">the</span> <span class="n">visualization</span> <span class="n">artifacts</span>
+   <span class="o">*/</span>
+  <span class="n">double</span> <span class="n">min_point_distance</span><span class="p">;</span>      <span class="o">/*</span> <span class="n">Minimum</span> <span class="n">distance</span> <span class="n">between</span> <span class="n">consecutive</span> <span class="n">trajectory</span> <span class="n">points</span><span class="o">.</span> <span class="o">*/</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>!DemoApplication Class:  Main component of the application which provides functions for each step in our program.  It also contains several constructs that turn this application into a ros node.</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span>class DemoApplication
+{
+public:
+  /*  Constructor
+   *    Creates an instance of the application class
+   */
+  DemoApplication();
+  virtual ~DemoApplication();
+
+  /* Main Application Functions
+   *  Functions that allow carrying out the various steps needed to run a
+   *  plan an run application.  All these functions will be invoked from within
+   *  the main routine.
+   */
+
+  void loadParameters();
+  void initRos();
+  void initDescartes();
+  void moveHome();
+  void generateTrajectory(DescartesTrajectory&amp; traj);
+  void planPath(DescartesTrajectory&amp; input_traj,DescartesTrajectory&amp; output_path);
+  void runPath(const DescartesTrajectory&amp; path);
+
+protected:
+
+  /* Support methods
+   *  Called from within the main application functions in order to perform convenient tasks.
+   */
+
+  static bool createLemniscateCurve(double foci_distance, double sphere_radius,
+                                    int num_points, int num_lemniscates,
+                                    const Eigen::Vector3d&amp; sphere_center,
+                                    EigenSTL::vector_Affine3d&amp; poses);
+
+  void fromDescartesToMoveitTrajectory(const DescartesTrajectory&amp; in_traj,
+                                              trajectory_msgs::JointTrajectory&amp; out_traj);
+
+  void publishPosesMarkers(const EigenSTL::vector_Affine3d&amp; poses);
+
+
+protected:
+
+  /* Application Data
+   *  Holds the data used by the various functions in the application.
+   */
+  DemoConfiguration config_;
+
+
+
+  /* Application ROS Constructs
+   *  Components needed to successfully run a ros-node and perform other important
+   *  ros-related tasks
+   */
+  ros::NodeHandle nh_;                        /* Object used for creating and managing ros application resources*/
+  ros::Publisher marker_publisher_;           /* Publishes visualization message to Rviz */
+  ros::ServiceClient moveit_run_path_client_; /* Sends a robot trajectory to moveit for execution */
+
+
+
+  /* Application Descartes Constructs
+   *  Components accessing the path planning capabilities in the Descartes library
+   */
+  descartes_core::RobotModelPtr robot_model_ptr_; /* Performs tasks specific to the Robot
+                                                     such IK, FK and collision detection*/
+  descartes_planner::SparsePlanner planner_;      /* Plans a smooth robot path given a trajectory of points */
+
+};
+</pre></div>
+</div>
+</div>
+<div class="section" id="the-application-launch-file">
+<span id="the-application-launch-file"></span><h1>The Application Launch File<a class="headerlink" href="#the-application-launch-file" title="Permalink to this headline">¶</a></h1>
+<p>This file starts our application as a ros node and loads up the necessary parameters into the ros parameter server. Observe how this is done by opening the &quot;'''plan_and_run/launch/demo_run.launch'''&quot; file:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">launch</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">node</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;plan_and_run_node&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;plan_and_run_node&quot;</span> <span class="n">pkg</span><span class="o">=</span><span class="s2">&quot;plan_and_run&quot;</span> <span class="n">output</span><span class="o">=</span><span class="s2">&quot;screen&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;group_name&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;manipulator&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;tip_link&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;tool&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;base_link&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;base_link&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;world_frame&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;world&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;trajectory/time_delay&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;0.1&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;trajectory/foci_distance&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;0.07&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;trajectory/radius&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;0.08&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;trajectory/num_points&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;200&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;trajectory/num_lemniscates&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;4&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">rosparam</span> <span class="n">param</span><span class="o">=</span><span class="s2">&quot;trajectory/center&quot;</span><span class="o">&gt;</span><span class="p">[</span><span class="mf">0.36</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">rosparam</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">rosparam</span> <span class="n">param</span><span class="o">=</span><span class="s2">&quot;trajectory/seed_pose&quot;</span><span class="o">&gt;</span><span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.03</span><span class="p">,</span> <span class="mf">1.57</span> <span class="p">,</span> <span class="o">-</span><span class="mf">0.21</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">rosparam</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;visualization/min_point_distance&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;0.02&quot;</span><span class="o">/&gt;</span>
+  <span class="o">&lt;/</span><span class="n">node</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">launch</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Some of the important parameters are explained as follows:</li>
+<li>group_name: A namespace that points to the list of links in the robot that are included in the arm's kinematic chain (base to end-of-tooling links).  This list is defined in the '''ur5_demo_moveit_config''' package.</li>
+<li>tip_link: Name of the last link in the kinematic chain, usually the tool link.</li>
+<li>base_link: Name for the base link of the robot.</li>
+<li>world_frame: The absolute coordinate frame of reference for all the objects defined in the planning environment.</li>
+<li>The parameters under the &quot;''trajectory&quot;'' namespace are used to generate the trajectory that is feed into the Descartes planner.</li>
+<li>trajectory/seed_pose: This is of particular importance because it is used to indicate preferred start and end joint configurations of the robot when planning the path.  If a ''seed_pose'' wasn't specified then planning would take longer since multiple start and end joint configurations would have to be taken into account, leading to multiple path solutions that result from combining several start and end poses.</li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Levi Armstrong.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

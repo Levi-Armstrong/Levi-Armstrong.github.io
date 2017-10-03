@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Motivation &mdash; SphinxTest 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SphinxTest 1.0 documentation" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SphinxTest
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">SphinxTest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>1. Motivation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/doc/kinetic/Workcell-XACRO.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <blockquote>
+<div>In this exercise, we will create an XACRO file representing a simple robot workcell. This will demonstrate both URDF and XACRO elements.</div></blockquote>
+<hr class="docutils" />
+<div class="section" id="motivation">
+<span id="motivation"></span><h1>1. Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h1>
+<p>Writing URDFs that involve more than just a few elements can quickly become a pain. Your file gets huge and duplicate items in your workspace means copy-pasting a bunch of links and joints while having to change their names just slightly. It’s really easy to make a mistake that may (or may not) be caught at startup.
+It’d be nice if we could take some guidance from programming languages themselves: define a component once, then re-use it anywhere without excessive duplication. Functions and classes do that for programs, and XACRO macros do that for URDFs. XACRO has other cool features too, like a file include system (think #include), constant variables, math expression evaluation (e.g., say PI/2.0 instead of 1.57), and more.</p>
+</div>
+<div class="section" id="reference-example">
+<span id="reference-example"></span><h1>2. Reference Example<a class="headerlink" href="#reference-example" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://wiki.ros.org/urdf/Tutorials/Using%20Xacro%20to%20Clean%20Up%20a%20URDF%20File">Cleaning Up URDF with XACRO Tutorial</a></p>
+</div>
+<div class="section" id="further-information-and-resources">
+<span id="further-information-and-resources"></span><h1>3. Further Information and Resources<a class="headerlink" href="#further-information-and-resources" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://wiki.ros.org/xacro">Xacro Extension Documentation</a></p>
+<p><a class="reference external" href="http://wiki.ros.org/Industrial/Tutorials/Create%20a%20URDF%20for%20an%20Industrial%20Robot">Creating a URDF for an Industrial Robot</a></p>
+</div>
+<div class="section" id="scan-n-plan-application-problem-statement">
+<span id="scan-n-plan-application-problem-statement"></span><h1>4. Scan-N-Plan Application: Problem Statement<a class="headerlink" href="#scan-n-plan-application-problem-statement" title="Permalink to this headline">¶</a></h1>
+<p>In the previous exercise we created a workcell consisting of only static geometry. In this exercise, we'll add a UR5 robot <em>assembly</em> using XACRO tools.</p>
+<p>Specifically, you will need to:</p>
+<ol class="simple">
+<li>Convert the <code class="docutils literal"><span class="pre">*.urdf</span></code> file you created in the previous sample into a XACRO file with the <code class="docutils literal"><span class="pre">xacro</span></code> extension.</li>
+<li>Include a file containing the xacro-macro definition of a <code class="docutils literal"><span class="pre">UR5</span></code></li>
+<li>Instantiate a <code class="docutils literal"><span class="pre">UR5</span></code> in your workspace and connect it to the <em>table</em> link.</li>
+</ol>
+</div>
+<div class="section" id="scan-n-plan-application-guidance">
+<span id="scan-n-plan-application-guidance"></span><h1>5. Scan-N-Plan Application: Guidance<a class="headerlink" href="#scan-n-plan-application-guidance" title="Permalink to this headline">¶</a></h1>
+<ol>
+<li><p class="first">Rename the <code class="docutils literal"><span class="pre">workcell.urdf</span></code> file from the previous exercise to <code class="docutils literal"><span class="pre">workcell.xacro</span></code></p>
+</li>
+<li><p class="first">Bring in the <code class="docutils literal"><span class="pre">ur_description</span></code> package into your ROS environment. You have a few options:</p>
+<ol>
+<li><p class="first">You can install the debian packages: <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">ros-kinetic-universal-robot</span></code></p>
+<p><em>This has not yet been released, but will work later...</em></p>
+</li>
+<li><p class="first">You can clone it from <a class="reference external" href="https://github.com/ros-industrial/universal_robot">GitHub</a> to your catkin workspace:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">src</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ros</span><span class="o">-</span><span class="n">industrial</span><span class="o">/</span><span class="n">universal_robot</span><span class="o">.</span><span class="n">git</span>
+<span class="n">catkin</span> <span class="n">build</span>
+<span class="n">source</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">devel</span><span class="o">/</span><span class="n">setup</span><span class="o">.</span><span class="n">bash</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><p>It’s not uncommon for description packages to put each “module”, “part”, or “assembly” into its own file. In many cases, a package will also define extra files that define a complete cell with the given part so that we can easily visually inspect the result. The UR package defines such a file for the UR5 (<a class="reference external" href="https://github.com/ros-industrial/universal_robot/blob/indigo-devel/ur_description/urdf/ur5_robot.urdf.xacro">ur5_robot.urdf.xacro</a>): It’s a great example for this module.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Locate the xacro file that implements the UR5 macro and include it in your newly renamed <code class="docutils literal"><span class="pre">workcell.xacro</span></code> file.  Add this include line near the top of your <code class="docutils literal"><span class="pre">workcell.xacro</span></code> file, beneath the <code class="docutils literal"><span class="pre">&lt;robot&gt;</span></code> tag:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;xacro:include</span> <span class="na">filename=</span><span class="s">&quot;$(find ur_description)/urdf/ur5.urdf.xacro&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>If you explore the UR5 definition file, or just about any other file that defines a Xacro macro, you’ll find a lot of uses of <code class="docutils literal"><span class="pre">${prefix}</span></code> in element names. Xacro evaluates anything inside a “${}” at run-time. It can do basic math, and it can look up variables that come to it via properties (ala-global variables) or macro parameters. Most macros will take a “prefix” parameter to allow a user to create multiple instances of said macro. It’s the mechanism by which we can make the eventual URDF element names unique, otherwise we’d get duplicate link names and URDF would complain.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Including the <code class="docutils literal"><span class="pre">ur5.urdf.xacro</span></code> file does not actually create a UR5 robot in our URDF model.  It defines a macro, but we still need to call the macro to create the robot links and joints.  <em>Note the use of the <code class="docutils literal"><span class="pre">prefix</span></code> tag, as discussed above.</em></p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;xacro:ur5_robot</span> <span class="na">prefix=</span><span class="s">&quot;&quot;</span> <span class="na">joint_limited=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Macros in Xacro are just fancy wrappers around copy-paste. You make a macro and it gets turned into a chunk of links and joints. You still have to connect the rest of your world to that macro’s results. This means you have to look at the macro and see what the base link is and what the end link is. Hopefully your macro follows a standard, like the ROS-Industrial one, that says that base links are named “base_link” and the last link is called “tool0”.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Connect the UR5 <code class="docutils literal"><span class="pre">base_link</span></code> to your existing static geometry with a fixed link.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;joint</span> <span class="na">name=</span><span class="s">&quot;table_to_robot&quot;</span> <span class="na">type=</span><span class="s">&quot;fixed&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;parent</span> <span class="na">link=</span><span class="s">&quot;table&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;child</span> <span class="na">link=</span><span class="s">&quot;base_link&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;origin</span> <span class="na">xyz=</span><span class="s">&quot;0 0 0&quot;</span> <span class="na">rpy=</span><span class="s">&quot;0 0 0&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/joint&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Create a new <code class="docutils literal"><span class="pre">urdf.launch</span></code> file (in the <code class="docutils literal"><span class="pre">myworkcell_support</span></code> package) to load the URDF model and (optionally) display it in rviz:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;launch&gt;</span>
+  <span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;gui&quot;</span> <span class="na">default=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;robot_description&quot;</span> <span class="na">command=</span><span class="s">&quot;$(find xacro)/xacro --inorder &#39;$(find myworkcell_support)/urdf/workcell.xacro&#39;&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;node</span> <span class="na">name=</span><span class="s">&quot;robot_state_publisher&quot;</span> <span class="na">pkg=</span><span class="s">&quot;robot_state_publisher&quot;</span> <span class="na">type=</span><span class="s">&quot;robot_state_publisher&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;node</span> <span class="na">name=</span><span class="s">&quot;joint_state_publisher&quot;</span> <span class="na">pkg=</span><span class="s">&quot;joint_state_publisher&quot;</span> <span class="na">type=</span><span class="s">&quot;joint_state_publisher&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;use_gui&quot;</span> <span class="na">value=</span><span class="s">&quot;$(arg gui)&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/node&gt;</span>
+  <span class="nt">&lt;node</span> <span class="na">name=</span><span class="s">&quot;rviz&quot;</span> <span class="na">pkg=</span><span class="s">&quot;rviz&quot;</span> <span class="na">type=</span><span class="s">&quot;rviz&quot;</span> <span class="na">if=</span><span class="s">&quot;$(arg gui)&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/launch&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Check the updated URDF in RViz, using the launch file you just created:</p>
+<p><code class="docutils literal"><span class="pre">roslaunch</span> <span class="pre">myworkcell_support</span> <span class="pre">urdf.launch</span></code></p>
+<ul class="simple">
+<li>Set the 'Fixed Frame' to 'world' and add the RobotModel and TF displays to the tree view on the left, to show the robot and some transforms.</li>
+<li>Try moving the joint sliders to see the UR5 robot move.</li>
+</ul>
+</li>
+</ol>
+<p><center></p>
+<p>| [[&lt; Prev|Intro-to-URDF]] | [[Next &gt;|Coordinate-Transforms-using-TF]] |
+|:---  | ---:|</p>
+<p></center></p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Levi Armstrong.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

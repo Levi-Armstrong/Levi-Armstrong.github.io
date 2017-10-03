@@ -1,0 +1,438 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Motivation &mdash; SphinxTest 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SphinxTest 1.0 documentation" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SphinxTest
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">SphinxTest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Motivation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/doc/kinetic/Introduction-to-STOMP.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="motivation">
+<span id="motivation"></span><h1>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Learn how to plan with STOMP through !MoveIt!.</li>
+</ul>
+</div>
+<div class="section" id="information-and-resources">
+<span id="information-and-resources"></span><h1>Information and Resources<a class="headerlink" href="#information-and-resources" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>STOMP for <a class="reference external" href="http://rosindustrial.org/news/2015/9/25/stomp-for-indigo-presentation-from-the-moveit-community-meeting-3-sept-2015">MoveIt!</a></li>
+<li>Plugins for <a class="reference external" href="http://moveit.ros.org/documentation/plugins/">MoveIt!</a></li>
+</ul>
+</div>
+<div class="section" id="objectives">
+<span id="objectives"></span><h1>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Integrate STOMP into !MoveIt! by changing and adding files to a <strong>moveit_config</strong> package.</li>
+<li>We'll then generate STOMP plans from the <a class="reference external" href="http://docs.ros.org/hydro/api/moveit_ros_visualization/html/doc/tutorial.html">Rviz Motion Planning Plugin</a></li>
+</ul>
+</div>
+<div class="section" id="setup">
+<span id="setup"></span><h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p class="first">Create a workspace</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">--</span><span class="n">parent</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">src</span>
+<span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span>
+<span class="n">catkin</span> <span class="n">init</span>
+<span class="n">catkin</span> <span class="n">build</span>
+<span class="n">source</span> <span class="n">devel</span><span class="o">/</span><span class="n">setup</span><span class="o">.</span><span class="n">bash</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Copy over existing exercise</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">src</span>
+<span class="n">cp</span> <span class="o">-</span><span class="n">r</span> <span class="o">~/</span><span class="n">industrial_training</span><span class="o">/</span><span class="n">exercises</span><span class="o">/</span><span class="mf">4.1</span> <span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Clone industrial_moveit repository into your workspace</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">src</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ros</span><span class="o">-</span><span class="n">industrial</span><span class="o">/</span><span class="n">industrial_moveit</span><span class="o">.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">kinetic</span><span class="o">-</span><span class="n">devel</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Install Missing Dependencies</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="mf">4.1</span>
+<span class="n">rosinstall</span> <span class="o">.</span> <span class="o">.</span><span class="n">rosinstall</span>
+<span class="n">catkin</span> <span class="n">build</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Create a <strong>moveit_config</strong> package created with the <a class="reference external" href="http://docs.ros.org/hydro/api/moveit_setup_assistant/html/doc/tutorial.html"> MoveIt! Setup Assistant </a></p>
+</li>
+</ul>
+</div>
+<div class="section" id="add-stomp">
+<span id="add-stomp"></span><h1>Add STOMP<a class="headerlink" href="#add-stomp" title="Permalink to this headline">¶</a></h1>
+<ol>
+<li><p class="first">Create a &quot;<em>stomp_planning_pipeline.launch.xml</em>&quot; file in the <strong>launch</strong> directory of your <strong>moveit_config</strong> package.  The file should contain the following:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;launch&gt;</span>
+
+  <span class="c">&lt;!-- Stomp Plugin for MoveIt! --&gt;</span>
+  <span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;planning_plugin&quot;</span> <span class="na">value=</span><span class="s">&quot;stomp_moveit/StompPlannerManager&quot;</span> <span class="nt">/&gt;</span>
+
+  <span class="c">&lt;!-- The request adapters (plugins) ORDER MATTERS --&gt;</span>
+  <span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;planning_adapters&quot;</span> <span class="na">value=</span><span class="s">&quot;default_planner_request_adapters/FixWorkspaceBounds</span>
+<span class="s">                                       default_planner_request_adapters/FixStartStateBounds</span>
+<span class="s">                                       default_planner_request_adapters/FixStartStateCollision</span>
+<span class="s">                                       default_planner_request_adapters/FixStartStatePathConstraints&quot;</span> <span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;start_state_max_bounds_error&quot;</span> <span class="na">value=</span><span class="s">&quot;0.1&quot;</span> <span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;planning_plugin&quot;</span> <span class="na">value=</span><span class="s">&quot;$(arg planning_plugin)&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;request_adapters&quot;</span> <span class="na">value=</span><span class="s">&quot;$(arg planning_adapters)&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;start_state_max_bounds_error&quot;</span> <span class="na">value=</span><span class="s">&quot;$(arg start_state_max_bounds_error)&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;rosparam</span> <span class="na">command=</span><span class="s">&quot;load&quot;</span> <span class="na">file=</span><span class="s">&quot;$(find myworkcell_moveit_config)/config/stomp_planning.yaml&quot;</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/launch&gt;</span>
+</pre></div>
+</div>
+<p><strong>!!!</strong> Take notice of the <strong>stomp_planning.yaml</strong> configuration file, this file must exists in moveit_config package.</p>
+</li>
+</ol>
+<ol>
+<li><p class="first">Create the &quot;<em>stomp_planning.yaml</em>&quot; configuration file</p>
+<p>This file contains the parameters required by STOMP.  The parameters are specific to each ''planning group'' defined in   the SRDF file.  So if there are three planning groups &quot;manipulator&quot;,
+&quot;manipulator_tool&quot;, and &quot;manipulator_rail&quot; then the configuration file defines a specific set of parameters for each  planning group:</p>
+<div class="highlight-yaml"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">stomp/manipulator_rail</span><span class="p p-Indicator">:</span>
+  <span class="l l-Scalar l-Scalar-Plain">group_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">manipulator_rail</span>
+  <span class="l l-Scalar l-Scalar-Plain">optimization</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">num_timesteps</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">60</span>
+    <span class="l l-Scalar l-Scalar-Plain">num_iterations</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">40</span>
+    <span class="l l-Scalar l-Scalar-Plain">num_iterations_after_valid</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>    
+    <span class="l l-Scalar l-Scalar-Plain">num_rollouts</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">30</span>
+    <span class="l l-Scalar l-Scalar-Plain">max_rollouts</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">30</span> 
+    <span class="l l-Scalar l-Scalar-Plain">initialization_method</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span> <span class="c1">#[1 : LINEAR_INTERPOLATION, 2 : CUBIC_POLYNOMIAL, 3 : MININUM_CONTROL_COST</span>
+    <span class="l l-Scalar l-Scalar-Plain">control_cost_weight</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.0</span>
+  <span class="l l-Scalar l-Scalar-Plain">task</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">noise_generator</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/NormalDistributionSampling</span>
+        <span class="l l-Scalar l-Scalar-Plain">stddev</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">0.05</span><span class="p p-Indicator">,</span> <span class="nv">0.8</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">,</span> <span class="nv">0.8</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">]</span>
+    <span class="l l-Scalar l-Scalar-Plain">cost_functions</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/CollisionCheck</span>
+        <span class="l l-Scalar l-Scalar-Plain">collision_penalty</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0</span>
+        <span class="l l-Scalar l-Scalar-Plain">cost_weight</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0</span>
+        <span class="l l-Scalar l-Scalar-Plain">kernel_window_percentage</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.2</span>
+        <span class="l l-Scalar l-Scalar-Plain">longest_valid_joint_move</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.05</span> 
+    <span class="l l-Scalar l-Scalar-Plain">noisy_filters</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/JointLimits</span>
+        <span class="l l-Scalar l-Scalar-Plain">lock_start</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+        <span class="l l-Scalar l-Scalar-Plain">lock_goal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/MultiTrajectoryVisualization</span>
+        <span class="l l-Scalar l-Scalar-Plain">line_width</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.02</span>
+        <span class="l l-Scalar l-Scalar-Plain">rgb</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">255</span><span class="p p-Indicator">,</span> <span class="nv">255</span><span class="p p-Indicator">,</span> <span class="nv">0</span><span class="p p-Indicator">]</span>
+        <span class="l l-Scalar l-Scalar-Plain">marker_array_topic</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_trajectories</span>
+        <span class="l l-Scalar l-Scalar-Plain">marker_namespace</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">noisy</span>
+    <span class="l l-Scalar l-Scalar-Plain">update_filters</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/PolynomialSmoother</span>
+        <span class="l l-Scalar l-Scalar-Plain">poly_order</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">6</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/TrajectoryVisualization</span>
+        <span class="l l-Scalar l-Scalar-Plain">line_width</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.05</span>
+        <span class="l l-Scalar l-Scalar-Plain">rgb</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">191</span><span class="p p-Indicator">,</span> <span class="nv">255</span><span class="p p-Indicator">]</span>
+        <span class="l l-Scalar l-Scalar-Plain">error_rgb</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">255</span><span class="p p-Indicator">,</span> <span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">0</span><span class="p p-Indicator">]</span>
+        <span class="l l-Scalar l-Scalar-Plain">publish_intermediate</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+        <span class="l l-Scalar l-Scalar-Plain">marker_topic</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_trajectory</span>
+        <span class="l l-Scalar l-Scalar-Plain">marker_namespace</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">optimized</span>
+<span class="l l-Scalar l-Scalar-Plain">stomp/manipulator</span><span class="p p-Indicator">:</span>
+  <span class="l l-Scalar l-Scalar-Plain">group_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">manipulator</span>
+  <span class="l l-Scalar l-Scalar-Plain">optimization</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">num_timesteps</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">40</span>
+    <span class="l l-Scalar l-Scalar-Plain">num_iterations</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">40</span>
+    <span class="l l-Scalar l-Scalar-Plain">num_iterations_after_valid</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>    
+    <span class="l l-Scalar l-Scalar-Plain">num_rollouts</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+    <span class="l l-Scalar l-Scalar-Plain">max_rollouts</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span> 
+    <span class="l l-Scalar l-Scalar-Plain">initialization_method</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span> <span class="c1">#[1 : LINEAR_INTERPOLATION, 2 : CUBIC_POLYNOMIAL, 3 : MININUM_CONTROL_COST</span>
+    <span class="l l-Scalar l-Scalar-Plain">control_cost_weight</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.0</span>
+  <span class="l l-Scalar l-Scalar-Plain">task</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">noise_generator</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/NormalDistributionSampling</span>
+        <span class="l l-Scalar l-Scalar-Plain">stddev</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">0.05</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">,</span> <span class="nv">1.2</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">,</span> <span class="nv">0.1</span><span class="p p-Indicator">]</span>
+    <span class="l l-Scalar l-Scalar-Plain">cost_functions</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/CollisionCheck</span> 
+        <span class="l l-Scalar l-Scalar-Plain">kernel_window_percentage</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.2</span>
+        <span class="l l-Scalar l-Scalar-Plain">collision_penalty</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0</span>
+        <span class="l l-Scalar l-Scalar-Plain">cost_weight</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0</span>
+        <span class="l l-Scalar l-Scalar-Plain">longest_valid_joint_move</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.05</span>
+    <span class="l l-Scalar l-Scalar-Plain">noisy_filters</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/JointLimits</span>
+        <span class="l l-Scalar l-Scalar-Plain">lock_start</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+        <span class="l l-Scalar l-Scalar-Plain">lock_goal</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/MultiTrajectoryVisualization</span>
+        <span class="l l-Scalar l-Scalar-Plain">line_width</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.04</span>
+        <span class="l l-Scalar l-Scalar-Plain">rgb</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">255</span><span class="p p-Indicator">,</span> <span class="nv">255</span><span class="p p-Indicator">,</span> <span class="nv">0</span><span class="p p-Indicator">]</span>
+        <span class="l l-Scalar l-Scalar-Plain">marker_array_topic</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_trajectories</span>
+        <span class="l l-Scalar l-Scalar-Plain">marker_namespace</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">noisy</span>
+    <span class="l l-Scalar l-Scalar-Plain">update_filters</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/PolynomialSmoother</span>
+        <span class="l l-Scalar l-Scalar-Plain">poly_order</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">class</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_moveit/TrajectoryVisualization</span>
+        <span class="l l-Scalar l-Scalar-Plain">line_width</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.02</span>
+        <span class="l l-Scalar l-Scalar-Plain">rgb</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">191</span><span class="p p-Indicator">,</span> <span class="nv">255</span><span class="p p-Indicator">]</span>
+        <span class="l l-Scalar l-Scalar-Plain">error_rgb</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">255</span><span class="p p-Indicator">,</span> <span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">0</span><span class="p p-Indicator">]</span>
+        <span class="l l-Scalar l-Scalar-Plain">publish_intermediate</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+        <span class="l l-Scalar l-Scalar-Plain">marker_topic</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stomp_trajectory</span>
+        <span class="l l-Scalar l-Scalar-Plain">marker_namespace</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">optimized</span>      
+</pre></div>
+</div>
+<p><strong>!!!</strong> <em>Save this file in the</em> <strong>config</strong> <em>directory of the moveit_config package</em></p>
+</li>
+<li><p class="first">Modify the <strong>move_group.launch</strong> file:
+Open the <strong>move_group.launch</strong> in the launch directory and change the <code class="docutils literal"><span class="pre">pipeline</span></code> parameter value to <code class="docutils literal"><span class="pre">stomp</span></code> as shown below:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span>    .
+    .
+    .
+<span class="c">&lt;!-- move_group settings --&gt;</span>
+<span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;allow_trajectory_execution&quot;</span> <span class="na">default=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;fake_execution&quot;</span> <span class="na">default=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;max_safe_path_cost&quot;</span> <span class="na">default=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;jiggle_fraction&quot;</span> <span class="na">default=</span><span class="s">&quot;0.05&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;publish_monitored_planning_scene&quot;</span> <span class="na">default=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Planning Functionality --&gt;</span>
+<span class="nt">&lt;include</span> <span class="na">ns=</span><span class="s">&quot;move_group&quot;</span> <span class="na">file=</span><span class="s">&quot;$(find myworkcell_moveit_config)/launch/planning_pipeline.launch.xml&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;pipeline&quot;</span> <span class="na">value=</span><span class="s">&quot;stomp&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/include&gt;</span>
+
+    .
+    .
+    .
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="section" id="run-moveit-with-stomp">
+<span id="run-moveit-with-stomp"></span><h2>Run MoveIt! with STOMP<a class="headerlink" href="#run-moveit-with-stomp" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p class="first">In a sourced terminal, run the <strong>demo.launch</strong> file:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">myworkcell_moveit_config</span> <span class="n">demo</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">In Rviz, select robot start and goal positions and plan:</p>
+</li>
+</ol>
+<ul class="simple">
+<li>In the &quot;Motion Planning&quot; panel, go to the &quot;Planning&quot; tab.</li>
+<li>Click the &quot;Select Start State&quot; drop-down, select &quot;allZeros&quot; and click &quot;Update&quot;</li>
+<li>Click the &quot;Select Goal State&quot; drop-down, select &quot;home&quot; and click &quot;Update&quot;</li>
+<li>Click the &quot;Plan&quot; button and watch the arm move past obstacles to reach the goal position. The blue line shows the tool path.</li>
+</ul>
+</div>
+<div class="section" id="explore-stomp">
+<span id="explore-stomp"></span><h2>Explore STOMP<a class="headerlink" href="#explore-stomp" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li>In Rviz, select other &quot;Start&quot; and &quot;Goal&quot; positions and then hit plan and see the robot move.</li>
+<li>Display the <em>Noisy Trajectories</em> by clicking on the &quot;Marker Array&quot; checkbox in the &quot;Displays&quot; Rviz panel.  Hit the &quot;Plan&quot; button again and you'll see the noisy trajectory markers as yellow lines.</li>
+</ol>
+<blockquote>
+<div>Note:
+STOMP explores the workspace by generating a number of noisy trajectories as a result of applying noise onto the current trajectory.  The degree of noise applied can be be changed by adjusting the &quot;stddev&quot; parameters in the &quot;<em>stomp_config.yaml</em>&quot; file.  Larger &quot;stddev&quot; values correspond to larger motions of the joints.</div></blockquote>
+</div>
+<div class="section" id="configure-stomp">
+<span id="configure-stomp"></span><h2>Configure STOMP<a class="headerlink" href="#configure-stomp" title="Permalink to this headline">¶</a></h2>
+<p>We'll now change the parameters in the <strong>stomp_config.yaml</strong> and see what effect those changes have on the planning.</p>
+<ol class="simple">
+<li>Ctrl-C in the terminal where you ran the <strong>demo.launch</strong> file earlier to stop the <strong>move_group</strong> planning node.</li>
+<li>Locate and open up the <strong>stomp_config.yaml</strong> with your preferred editor.</li>
+<li>Under the &quot;manipulator_rail&quot; group, take notice of the values assigned to &quot;stddev&quot; parameter.  Each value is the amplitude of the noise applied to the joint at that position in the array.  For instance, the leftmost value in the array will be the value used to set the noise of the first joint &quot;rail_to_base&quot;; which moves the rail along the x direction.  Since the &quot;rail_to_base&quot; is a prismatic joint then its units are in meters; for revolute joints the units are radians.</li>
+<li>Change the &quot;stddev&quot; values (preferably one entry at a time), save the file and rerun the &quot;demo.launch&quot; file in the terminal.</li>
+<li>Go back to the Rviz window and select arbitrary &quot;Start&quot; and &quot;Goal&quot; positions to see what effect your changes have had on the planning performance.</li>
+</ol>
+</div>
+<div class="section" id="more-info-on-the-stomp-parameters">
+<span id="more-info-on-the-stomp-parameters"></span><h2>More info on the STOMP parameters<a class="headerlink" href="#more-info-on-the-stomp-parameters" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="#">STOMP wiki</a> explains these parameter in more detail.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Levi Armstrong.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

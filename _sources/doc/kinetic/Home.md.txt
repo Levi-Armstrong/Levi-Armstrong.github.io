@@ -1,0 +1,90 @@
+# ROS Industrial (Kinetic) Training Exercises
+## Setup Your PC
+* [[PC Setup|PC-Setup---ROS-Kinetic]]
+
+## Prerequisites
+### Linux Fundamentals
+* [Presentation Slides - Linux Basics](../raw/kinetic/slides/ROS-I%20Basic%20Developers%20Training%20-%20Session%200.pdf)
+* [[Exercise 0.1|Navigating-the-Ubuntu-GUI]] - Intro to the Ubuntu GUI
+* [[Exercise 0.2|Exploring-the-Linux-File-System]] - The Linux File System
+* [[Exercise 0.3|The-Linux-Terminal]] - Using the Terminal
+
+### C++
+* [MIT Open Courseware: Introduction to C++](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/assignments/)
+* [Bruce Eckel: Thinking in C++](http://mindview.net/Books/TICPP/ThinkingInCPP2e.html)
+
+## Introduction
+* [Presentation Slides - Introduction](../raw/kinetic/slides/ROS-I%20Developers%20Training%20-%20Introduction.pdf)
+
+## Basic Topics (Sessions 1-4)
+### Session 1 - ROS Concepts and Fundamentals
+* [Presentation Slides - Session 1](../raw/kinetic-devel/slides/ROS-I%20Basic%20Developers%20Training%20-%20Session%201.pdf)
+* [[Exercise 1.0|ROS-Setup]] - ROS Setup
+* [[Exercise 1.1|Create-Catkin-Workspace]] - Create a Catkin Workspace
+* [[Exercise 1.2|Installing-Existing-Packages]] - Installing Existing Packages
+* [[Exercise 1.3|Creating-a-ROS-Package-and-Node]] - Creating a ROS Package and Node
+* [[Exercise 1.4|Topics-and-Messages]] - Topics and Messages
+
+### Session 2 - Basic ROS Applications
+* [Presentation Slides - Session 2](../raw/kinetic-devel/slides/ROS-I%20Basic%20Developers%20Training%20-%20Session%202.pdf)
+* [[Exercise 2.0|Services]] - Services
+* [[Exercise 2.1|Actions]] - Actions
+* [[Exercise 2.2|Launch-Files]] - ROS Launch Files
+* [[Exercise 2.3|Parameters]] - Parameters
+
+### Session 3 - Motion Control of Manipulators
+* [Presentation Slides - Session 3](../raw/kinetic-devel/slides/ROS-I%20Basic%20Developers%20Training%20-%20Session%203.pdf)
+* [[Exercise 3.0|Intro-to-URDF]] - Intro to URDF
+* [[Exercise 3.1|Workcell-XACRO]] - Workcell XACRO
+* [[Exercise 3.2|Coordinate-Transforms-using-TF]] - Coordinate Transforms using TF
+* [[Exercise 3.3|Build-a-Moveit!-Package]] - Build a Moveit! Package
+* [[Exercise 3.4|Motion-Planning-RVIZ]] - Motion Planning Using RViz
+
+### Session 4 - Descartes and Perception
+* [Presentation Slides - Session 4](../raw/kinetic-devel/slides/ROS-I%20Basic%20Developers%20Training%20-%20Session%204.pdf)
+* [[Exercise 4.0|Motion-Planning-CPP]] - Motion Planning using C++
+* [[Exercise 4.1|Descartes-Path-Planning]] - Introduction to Descartes Path Planning
+* [[Exercise 4.2|Introduction-to-Perception]] - Introduction to Perception
+* [Recap Slides](http://aeswiki.datasys.swri.edu/rositraining/indigo-devel-ACD/Exercises?action=AttachFile&do=upload_form&ticket=00589057f6.d07675d9b076e1e30d94669d0da65a11f8cebd13&target=ROS-I+Developers+Training+-+Recap+%28Indigo-Devel%29.pdf)
+
+### Application Demo - Perception-Driven Manipulation
+* [[Introduction|Perception-Driven-Manipulation-Introduction]] - Introduction
+* [[Perception-Driven Manipulation Exercise 1|Inspect the-"pick_and_place_exercise"-package]] - Inspect the "pick_and_place_exercise" Package
+* [[Perception-Driven Manipulation Exercise 2|Package-Setup]] - Package Setup
+* [[Perception-Driven Manipulation Exercise 3|Bring-up-ROS-system-in-simulation-mode]] - Bring up ROS System in Simulation Mode
+* [[Perception-Driven Manipulation Exercise 4|Inspect initialization-and-global-variables]] - Inspect Initialization and Global Variables
+* [[Perception-Driven Manipulation Exercise 5|Move-arm to-wait-position]] - Move Arm to Wait Position
+* [[Perception-Driven Manipulation Exercise 6|Open-gripper]] - Open Gripper
+* [[Perception-Driven Manipulation Exercise 7|Detect-box-pick-point]] - Detect Box Pick Point
+* [[Perception-Driven Manipulation Exercise 8|Create-pick-moves]] - Create Pick Moves
+* [[Perception-Driven Manipulation Exercise 9|Pick-up-box]] - Pick Up Box
+* [[Perception-Driven Manipulation Exercise 10|Create-place-moves]] - Create Place Moves
+* [[Perception-Driven Manipulation Exercise 11|Place-box]] - Place Box
+
+### Application Demo - Descartes Planning and Execution
+* [[Introduction|Descartes-Planning-and-Execution---Introduction]]
+* [[Application Structure|Descartes-Planning-and-Execution----Application-Structure]]
+* [[General Instructions|Descartes-Planning-and-Execution-General-Instructions]]
+* [[Descartes Planning and Execution Exercise 1|Descartes-Planning-and-Execution---Load-Parameters]] - Load Parameters
+* [[Descartes Planning and Execution Exercise 2|Descartes-Planning-and-Execution---Initialize-ROS]] - Initialize ROS
+* [[Descartes Planning and Execution Exercise 3|Descartes-Planning-and-Execution---Initialize-Descartes]] - Initialize Descartes
+* [[Descartes Planning and Execution Exercise 4|Descartes-Planning-and-Execution---Move-Home]] - Move Home
+* [[Descartes Planning and Execution Exercise 5|Descartes-Planning-and-Execution---Generate-a-Semi---Constrained-trajectory]] - Generate a Semi-Constrained Trajectory
+* [[Descartes Planning and Execution Exercise 6|Descartes-Planning-and-Execution---Plan-a-robot-path]] - Plan a Robot Path
+* [[Descartes Planning and Execution Exercise 7|Descartes-Planning-and-Execution---Run-a-robot-path]] - Run a Robot Path
+
+## Advanced Topics (Session 5-6)
+### Session 5 - Path Planning and Building a Perception Pipeline
+* [Presentation Slides - Session 5](../raw/kinetic-devel/slides/ROS-I%20Advacned%20Developers%20Training%20-%20Session%205.pdf)
+* [[Exercise 5.0|Advanced-Descartes-Path-Planning]] - Advanced Descartes Path Planning
+* [[Exercise 5.1|Building-a-Perception-Pipeline]] - Building a Perception Pipeline
+* [[Exercise 5.2|Introduction-to-STOMP]] - Introduction to STOMP
+
+### Session 6 - Documentation, Unit Tests, ROS Utilities and Debugging ROS
+* [Presentation Slides - Session 6](http://aeswiki.datasys.swri.edu/rositraining/indigo-devel/Exercises?action=AttachFile&do=get&target=ROS-I+Developers+Training+-+Recap+%28Indigo-Devel%29.pdf)
+* [[Exercise 6.0|Documentation-Generation]] - Documentation Generation from Annotated Sources Using rosdoc_lite
+* [[Exercise 6.1|Unit-Testing]] - Unit Testing
+* [[Exercise 6.2|Using-rqt-tools-for-analysis of ROS systems]] - Using rqt Tools for Analysis of ROS Systems 
+* [[Exercise 6.3|Style-Guide-and-ros_lint]] - Style Guide and ros_lint
+* [[Exercise 6.4|Style-Guide-and-ros_lint]] - Debugging ROS with Qt Creator
+* [[Exercise 6.5|Docker-AWS]] - Introduction to ROS with Docker and Amazon Web Services (AWS)

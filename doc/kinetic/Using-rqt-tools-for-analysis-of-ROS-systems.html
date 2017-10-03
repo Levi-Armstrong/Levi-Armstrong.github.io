@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Motivation &mdash; SphinxTest 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SphinxTest 1.0 documentation" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SphinxTest
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ROS-Setup.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html">1. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#reference-example">2. Reference Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#further-information-and-resources">3. Further Information and Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-problem-statement">4. Scan-N-Plan Application: Problem Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-Catkin-Workspace.html#scan-n-plan-application-guidance">5. Scan-N-Plan Application: Guidance</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">SphinxTest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>1. Motivation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/doc/kinetic/Using-rqt-tools-for-analysis-of-ROS-systems.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <blockquote>
+<div>In this exercise we will use rqt_console, rqt_graph and urdf_to_graphviz to understand behavior of the ROS system.</div></blockquote>
+<div class="section" id="motivation">
+<span id="motivation"></span><h1>1. Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h1>
+<p>When complicated multi-node ros systems are running it can be important to understand the interactions of nodes.</p>
+</div>
+<div class="section" id="information-and-resources">
+<span id="information-and-resources"></span><h1>2. Information and Resources<a class="headerlink" href="#information-and-resources" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://wiki.ros.org/catkin/Tutorials/using_a_workspace">Using a catkin workspace</a></p>
+</div>
+<div class="section" id="scan-n-plan-application-problem-statement">
+<span id="scan-n-plan-application-problem-statement"></span><h1>3. Scan-N-Plan Application: Problem Statement<a class="headerlink" href="#scan-n-plan-application-problem-statement" title="Permalink to this headline">¶</a></h1>
+<p>The Scan-N-Plan application is complete.  We would like to further inspect the descartes path planner's relation in our ROS application, the path planner's logic and the resulting plan.</p>
+</div>
+<div class="section" id="scan-n-plan-application-guidance">
+<span id="scan-n-plan-application-guidance"></span><h1>4. Scan-N-Plan Application: Guidance<a class="headerlink" href="#scan-n-plan-application-guidance" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="rqt-graph-view-node-interaction">
+<span id="rqt-graph-view-node-interaction"></span><h2>4.1 <code class="docutils literal"><span class="pre">rqt_graph</span></code>: view node interaction<a class="headerlink" href="#rqt-graph-view-node-interaction" title="Permalink to this headline">¶</a></h2>
+<p>In complex applications, it may be helpful to get a visual representation of the ROS node interactions.</p>
+<ol class="simple">
+<li>Launch the Scan-N-Plan workcell:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">myworkcell_support</span> <span class="n">setup</span><span class="o">.</span><span class="n">launch</span> 
+</pre></div>
+</div>
+<ol class="simple">
+<li>In a 2nd terminal, launch the rqt_graph:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rqt_graph</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>Here we can see the basic layout of our Scan-N-Plan application:
+<img alt="" src="https://github.com/AustinDeric/images/blob/master/basic_rqt_graph.png" /></li>
+<li>In a 3rd terminal, launch the descartes path planner.:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">myworkcell_core</span> <span class="n">myworkcell_node</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>You must update the graph while the node is running because the graph will not update automatically.  After the update, we see our updated ROS network contains out myworkcell_node. Also, The myworkcell_node is publishing a new topic <code class="docutils literal"><span class="pre">/move_group/goal</span></code> which is subscribed by the move_group node.
+<img alt="" src="https://github.com/AustinDeric/images/blob/master/planned_rqt_graph.png" /></li>
+</ol>
+</div>
+<div class="section" id="rqt-console-view-messages">
+<span id="rqt-console-view-messages"></span><h2>4.2<code class="docutils literal"><span class="pre">rqt_console</span></code>: view messages:<a class="headerlink" href="#rqt-console-view-messages" title="Permalink to this headline">¶</a></h2>
+<p>Now, we would like to see the output of the path planner.  rqt_console is a great gui for viewing ROS topics.</p>
+<ol class="simple">
+<li>Kill the rqt_graph application in the 2nd terminal and run rqt_console:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rqt_console</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>Run the path planner:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">myworkcell_core</span> <span class="n">myworkcell_node</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>The rqt_console automatically updates, showing the logic behind the path planner:
+<img alt="" src="https://github.com/AustinDeric/images/blob/master/rqt_console_output.png" /></li>
+</ol>
+</div>
+<div class="section" id="rqt-plot-view-data-plots">
+<span id="rqt-plot-view-data-plots"></span><h2>4.3 <code class="docutils literal"><span class="pre">rqt_plot</span></code>: view data plots<a class="headerlink" href="#rqt-plot-view-data-plots" title="Permalink to this headline">¶</a></h2>
+<p>rqt_plot is an easy way to plot ROS data in real time.  In this example, we will plot robot joint velocities from our path plan.</p>
+<ol class="simple">
+<li>Kill the rqt_console application in the 2nd terminal and run rqt_plot:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rqt_plot</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>In the <code class="docutils literal"><span class="pre">Topic</span></code> field add the following topics:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">joint_states</span><span class="o">/</span><span class="n">position</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="o">/</span><span class="n">joint_states</span><span class="o">/</span><span class="n">position</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="o">/</span><span class="n">joint_states</span><span class="o">/</span><span class="n">position</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="o">/</span><span class="n">joint_states</span><span class="o">/</span><span class="n">position</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="o">/</span><span class="n">joint_states</span><span class="o">/</span><span class="n">position</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="o">/</span><span class="n">joint_states</span><span class="o">/</span><span class="n">position</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>Then run the path planner:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">myworkcell_core</span> <span class="n">myworkcell_node</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>We can see the joint positions streaming in real-time:
+<img alt="" src="https://github.com/AustinDeric/images/blob/master/plot.png" /></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Levi Armstrong.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
